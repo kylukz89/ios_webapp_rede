@@ -1,0 +1,849 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03F24409CA1CD42955BBF9AC /* Pods_Rede_Telecom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DCFA229151C046A06548754 /* Pods_Rede_Telecom.framework */; };
+		825356FE2447252C00FBEEB5 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825356FD2447252C00FBEEB5 /* NotificationService.swift */; };
+		825357022447252C00FBEEB5 /* push.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 825356FB2447252C00FBEEB5 /* push.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8285E53A2447521700498484 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8285E5392447521700498484 /* GoogleService-Info.plist */; };
+		82A4C08F22A7094700AAF347 /* Gerenciamento.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82A4C08D22A7094700AAF347 /* Gerenciamento.xcdatamodeld */; };
+		82DA2043228B2987007293BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DA2042228B2987007293BF /* AppDelegate.swift */; };
+		82DA2045228B2987007293BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DA2044228B2987007293BF /* ViewController.swift */; };
+		82DA2048228B2987007293BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82DA2046228B2987007293BF /* Main.storyboard */; };
+		82DA204A228B2988007293BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82DA2049228B2988007293BF /* Assets.xcassets */; };
+		82DA204D228B2988007293BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82DA204B228B2988007293BF /* LaunchScreen.storyboard */; };
+		82DA2058228B2988007293BF /* WebAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DA2057228B2988007293BF /* WebAppTests.swift */; };
+		82DA2063228B2988007293BF /* WebAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DA2062228B2988007293BF /* WebAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		825357002447252C00FBEEB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82DA2037228B2987007293BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 825356FA2447252C00FBEEB5;
+			remoteInfo = push;
+		};
+		82DA2054228B2988007293BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82DA2037228B2987007293BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82DA203E228B2987007293BF;
+			remoteInfo = WebApp;
+		};
+		82DA205F228B2988007293BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82DA2037228B2987007293BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82DA203E228B2987007293BF;
+			remoteInfo = WebApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		825357032447252C00FBEEB5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				825357022447252C00FBEEB5 /* push.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3DCFA229151C046A06548754 /* Pods_Rede_Telecom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rede_Telecom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FB7B7690618CE8208244766 /* Pods-Rede Telecom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rede Telecom.release.xcconfig"; path = "Target Support Files/Pods-Rede Telecom/Pods-Rede Telecom.release.xcconfig"; sourceTree = "<group>"; };
+		8239CF1722A02589001FA235 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		8239CF1822A02589001FA235 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		824A96EA239160210078CD1B /* Rede Telecom.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Rede Telecom.entitlements"; sourceTree = "<group>"; };
+		825356FB2447252C00FBEEB5 /* push.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = push.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		825356FD2447252C00FBEEB5 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		825356FF2447252C00FBEEB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8285E5392447521700498484 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		82A4C08E22A7094700AAF347 /* Gerenciamento.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gerenciamento.xcdatamodel; sourceTree = "<group>"; };
+		82DA203F228B2987007293BF /* Rede Telecom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rede Telecom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82DA2042228B2987007293BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		82DA2044228B2987007293BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		82DA2047228B2987007293BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		82DA2049228B2988007293BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82DA204C228B2988007293BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82DA204E228B2988007293BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82DA2053228B2988007293BF /* Rede TelecomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rede TelecomTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82DA2057228B2988007293BF /* WebAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAppTests.swift; sourceTree = "<group>"; };
+		82DA2059228B2988007293BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82DA205E228B2988007293BF /* Rede TelecomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rede TelecomUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82DA2062228B2988007293BF /* WebAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAppUITests.swift; sourceTree = "<group>"; };
+		82DA2064228B2988007293BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B909BBF73690F549C17467EF /* Pods-Rede Telecom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rede Telecom.debug.xcconfig"; path = "Target Support Files/Pods-Rede Telecom/Pods-Rede Telecom.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		825356F82447252C00FBEEB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82DA203C228B2987007293BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F24409CA1CD42955BBF9AC /* Pods_Rede_Telecom.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82DA2050228B2988007293BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82DA205B228B2988007293BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43CA590AADA4B1F253F6F686 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCFA229151C046A06548754 /* Pods_Rede_Telecom.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		825356FC2447252C00FBEEB5 /* push */ = {
+			isa = PBXGroup;
+			children = (
+				825356FD2447252C00FBEEB5 /* NotificationService.swift */,
+				825356FF2447252C00FBEEB5 /* Info.plist */,
+			);
+			path = push;
+			sourceTree = "<group>";
+		};
+		82DA2036228B2987007293BF = {
+			isa = PBXGroup;
+			children = (
+				824A96EA239160210078CD1B /* Rede Telecom.entitlements */,
+				82DA2041228B2987007293BF /* WebApp */,
+				82DA2056228B2988007293BF /* WebAppTests */,
+				82DA2061228B2988007293BF /* WebAppUITests */,
+				825356FC2447252C00FBEEB5 /* push */,
+				82DA2040228B2987007293BF /* Products */,
+				DAE069D71162894EFFF3793D /* Pods */,
+				43CA590AADA4B1F253F6F686 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		82DA2040228B2987007293BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82DA203F228B2987007293BF /* Rede Telecom.app */,
+				82DA2053228B2988007293BF /* Rede TelecomTests.xctest */,
+				82DA205E228B2988007293BF /* Rede TelecomUITests.xctest */,
+				825356FB2447252C00FBEEB5 /* push.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82DA2041228B2987007293BF /* WebApp */ = {
+			isa = PBXGroup;
+			children = (
+				8285E5392447521700498484 /* GoogleService-Info.plist */,
+				82DA2042228B2987007293BF /* AppDelegate.swift */,
+				82DA2044228B2987007293BF /* ViewController.swift */,
+				82DA2046228B2987007293BF /* Main.storyboard */,
+				82DA2049228B2988007293BF /* Assets.xcassets */,
+				82DA204B228B2988007293BF /* LaunchScreen.storyboard */,
+				82DA204E228B2988007293BF /* Info.plist */,
+				82A4C08D22A7094700AAF347 /* Gerenciamento.xcdatamodeld */,
+			);
+			path = WebApp;
+			sourceTree = "<group>";
+		};
+		82DA2056228B2988007293BF /* WebAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				82DA2057228B2988007293BF /* WebAppTests.swift */,
+				82DA2059228B2988007293BF /* Info.plist */,
+			);
+			path = WebAppTests;
+			sourceTree = "<group>";
+		};
+		82DA2061228B2988007293BF /* WebAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				82DA2062228B2988007293BF /* WebAppUITests.swift */,
+				82DA2064228B2988007293BF /* Info.plist */,
+			);
+			path = WebAppUITests;
+			sourceTree = "<group>";
+		};
+		DAE069D71162894EFFF3793D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B909BBF73690F549C17467EF /* Pods-Rede Telecom.debug.xcconfig */,
+				6FB7B7690618CE8208244766 /* Pods-Rede Telecom.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		825356FA2447252C00FBEEB5 /* push */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 825357062447252C00FBEEB5 /* Build configuration list for PBXNativeTarget "push" */;
+			buildPhases = (
+				825356F72447252C00FBEEB5 /* Sources */,
+				825356F82447252C00FBEEB5 /* Frameworks */,
+				825356F92447252C00FBEEB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = push;
+			productName = push;
+			productReference = 825356FB2447252C00FBEEB5 /* push.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		82DA203E228B2987007293BF /* Rede Telecom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82DA2067228B2988007293BF /* Build configuration list for PBXNativeTarget "Rede Telecom" */;
+			buildPhases = (
+				F6F16413AB909F1B10F5F636 /* [CP] Check Pods Manifest.lock */,
+				82DA203B228B2987007293BF /* Sources */,
+				82DA203C228B2987007293BF /* Frameworks */,
+				82DA203D228B2987007293BF /* Resources */,
+				985F3B06F91FD1EC28176AD5 /* [CP] Embed Pods Frameworks */,
+				825357032447252C00FBEEB5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				825357012447252C00FBEEB5 /* PBXTargetDependency */,
+			);
+			name = "Rede Telecom";
+			productName = WebApp;
+			productReference = 82DA203F228B2987007293BF /* Rede Telecom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		82DA2052228B2988007293BF /* Rede TelecomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82DA206A228B2988007293BF /* Build configuration list for PBXNativeTarget "Rede TelecomTests" */;
+			buildPhases = (
+				82DA204F228B2988007293BF /* Sources */,
+				82DA2050228B2988007293BF /* Frameworks */,
+				82DA2051228B2988007293BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82DA2055228B2988007293BF /* PBXTargetDependency */,
+			);
+			name = "Rede TelecomTests";
+			productName = WebAppTests;
+			productReference = 82DA2053228B2988007293BF /* Rede TelecomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		82DA205D228B2988007293BF /* Rede TelecomUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82DA206D228B2988007293BF /* Build configuration list for PBXNativeTarget "Rede TelecomUITests" */;
+			buildPhases = (
+				82DA205A228B2988007293BF /* Sources */,
+				82DA205B228B2988007293BF /* Frameworks */,
+				82DA205C228B2988007293BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82DA2060228B2988007293BF /* PBXTargetDependency */,
+			);
+			name = "Rede TelecomUITests";
+			productName = WebAppUITests;
+			productReference = 82DA205E228B2988007293BF /* Rede TelecomUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82DA2037228B2987007293BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Programador;
+				TargetAttributes = {
+					825356FA2447252C00FBEEB5 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					82DA203E228B2987007293BF = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					82DA2052228B2988007293BF = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 82DA203E228B2987007293BF;
+					};
+					82DA205D228B2988007293BF = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 82DA203E228B2987007293BF;
+					};
+				};
+			};
+			buildConfigurationList = 82DA203A228B2987007293BF /* Build configuration list for PBXProject "Rede Telecom" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"pt-BR",
+			);
+			mainGroup = 82DA2036228B2987007293BF;
+			productRefGroup = 82DA2040228B2987007293BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82DA203E228B2987007293BF /* Rede Telecom */,
+				82DA2052228B2988007293BF /* Rede TelecomTests */,
+				82DA205D228B2988007293BF /* Rede TelecomUITests */,
+				825356FA2447252C00FBEEB5 /* push */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		825356F92447252C00FBEEB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82DA203D228B2987007293BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82DA204D228B2988007293BF /* LaunchScreen.storyboard in Resources */,
+				8285E53A2447521700498484 /* GoogleService-Info.plist in Resources */,
+				82DA204A228B2988007293BF /* Assets.xcassets in Resources */,
+				82DA2048228B2987007293BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82DA2051228B2988007293BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82DA205C228B2988007293BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		985F3B06F91FD1EC28176AD5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rede Telecom/Pods-Rede Telecom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rede Telecom/Pods-Rede Telecom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rede Telecom/Pods-Rede Telecom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6F16413AB909F1B10F5F636 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rede Telecom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		825356F72447252C00FBEEB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				825356FE2447252C00FBEEB5 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82DA203B228B2987007293BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82DA2045228B2987007293BF /* ViewController.swift in Sources */,
+				82DA2043228B2987007293BF /* AppDelegate.swift in Sources */,
+				82A4C08F22A7094700AAF347 /* Gerenciamento.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82DA204F228B2988007293BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82DA2058228B2988007293BF /* WebAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82DA205A228B2988007293BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82DA2063228B2988007293BF /* WebAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		825357012447252C00FBEEB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 825356FA2447252C00FBEEB5 /* push */;
+			targetProxy = 825357002447252C00FBEEB5 /* PBXContainerItemProxy */;
+		};
+		82DA2055228B2988007293BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82DA203E228B2987007293BF /* Rede Telecom */;
+			targetProxy = 82DA2054228B2988007293BF /* PBXContainerItemProxy */;
+		};
+		82DA2060228B2988007293BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82DA203E228B2987007293BF /* Rede Telecom */;
+			targetProxy = 82DA205F228B2988007293BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		82DA2046228B2987007293BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82DA2047228B2987007293BF /* Base */,
+				8239CF1722A02589001FA235 /* pt-BR */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+			usesTabs = 0;
+			wrapsLines = 1;
+		};
+		82DA204B228B2988007293BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82DA204C228B2988007293BF /* Base */,
+				8239CF1822A02589001FA235 /* pt-BR */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		825357042447252C00FBEEB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 35;
+				DEVELOPMENT_TEAM = G8LML54773;
+				INFOPLIST_FILE = push/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.3;
+				PRODUCT_BUNDLE_IDENTIFIER = RedeTelecom.WebApp.push;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		825357052447252C00FBEEB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 35;
+				DEVELOPMENT_TEAM = G8LML54773;
+				INFOPLIST_FILE = push/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.3;
+				PRODUCT_BUNDLE_IDENTIFIER = RedeTelecom.WebApp.push;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		82DA2065228B2988007293BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82DA2066228B2988007293BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82DA2068228B2988007293BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B909BBF73690F549C17467EF /* Pods-Rede Telecom.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Rede Telecom.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 36;
+				DEVELOPMENT_TEAM = G8LML54773;
+				INFOPLIST_FILE = WebApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.5;
+				PRODUCT_BUNDLE_IDENTIFIER = RedeTelecom.WebApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82DA2069228B2988007293BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FB7B7690618CE8208244766 /* Pods-Rede Telecom.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Rede Telecom.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 36;
+				DEVELOPMENT_TEAM = G8LML54773;
+				INFOPLIST_FILE = WebApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.5;
+				PRODUCT_BUNDLE_IDENTIFIER = RedeTelecom.WebApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		82DA206B228B2988007293BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WebAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rede.WebAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rede Telecom.app/Rede Telecom";
+			};
+			name = Debug;
+		};
+		82DA206C228B2988007293BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WebAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rede.WebAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rede Telecom.app/Rede Telecom";
+			};
+			name = Release;
+		};
+		82DA206E228B2988007293BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8LML54773;
+				INFOPLIST_FILE = WebAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rede.WebAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WebApp;
+			};
+			name = Debug;
+		};
+		82DA206F228B2988007293BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8LML54773;
+				INFOPLIST_FILE = WebAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Rede.WebAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WebApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		825357062447252C00FBEEB5 /* Build configuration list for PBXNativeTarget "push" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				825357042447252C00FBEEB5 /* Debug */,
+				825357052447252C00FBEEB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82DA203A228B2987007293BF /* Build configuration list for PBXProject "Rede Telecom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82DA2065228B2988007293BF /* Debug */,
+				82DA2066228B2988007293BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82DA2067228B2988007293BF /* Build configuration list for PBXNativeTarget "Rede Telecom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82DA2068228B2988007293BF /* Debug */,
+				82DA2069228B2988007293BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82DA206A228B2988007293BF /* Build configuration list for PBXNativeTarget "Rede TelecomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82DA206B228B2988007293BF /* Debug */,
+				82DA206C228B2988007293BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82DA206D228B2988007293BF /* Build configuration list for PBXNativeTarget "Rede TelecomUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82DA206E228B2988007293BF /* Debug */,
+				82DA206F228B2988007293BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		82A4C08D22A7094700AAF347 /* Gerenciamento.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				82A4C08E22A7094700AAF347 /* Gerenciamento.xcdatamodel */,
+			);
+			currentVersion = 82A4C08E22A7094700AAF347 /* Gerenciamento.xcdatamodel */;
+			path = Gerenciamento.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 82DA2037228B2987007293BF /* Project object */;
+}
