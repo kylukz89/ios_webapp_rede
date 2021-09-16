@@ -81,7 +81,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
         ////////////////////////
         
         // Acesso a aplicacao enviando um POST
-        let url = NSURL (string: "http://187.95.0.22/producao/central/indexIOSTempOldServer.php")
+        let url = NSURL (string: "URL")
         // Envia informacoes via post para seguranca
         let request = NSMutableURLRequest(url: url! as URL)
         request.httpMethod = "POST"
@@ -158,7 +158,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
         
         // print("==============================================> caiu " + cpfCnpj)
         // Acesso a aplicacao enviando um POST
-        let url = NSURL (string: "http://187.95.0.22/producao/central/indexFirebaseOldServer.php")
+        let url = NSURL (string: "URL")
         
         let request = NSMutableURLRequest(url: url! as URL)
         request.httpMethod = "POST"
